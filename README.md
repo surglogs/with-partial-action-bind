@@ -1,5 +1,7 @@
 # withPartialActionBind
 
+[![Build Status](https://travis-ci.org/surglogs/with-partial-action-bind.svg?branch=master)](https://travis-ci.org/surglogs/with-partial-action-bind)
+
 withPartialActionBind is a [Higher Order Component](https://reactjs.org/docs/higher-order-components.html) that allows you to connect a [`Redux`](https://redux.js.org/) action and bind some of action's arguments with incoming props or redux state.
 
 ## Instalation
