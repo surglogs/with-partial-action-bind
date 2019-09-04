@@ -8,14 +8,14 @@ import flip from 'ramda/src/flip'
 import prop from 'ramda/src/prop'
 import apply from 'ramda/src/apply'
 
-const PARAMS = '$params'
-const HANDLER = '$handler'
+const PARAMS = '$WITH_PARTIAL_ACTION_BIND_params'
+const HANDLER = '$WITH_PARTIAL_ACTION_BIND_handler'
 
 const omitProps = (keys) => mapProps((props) => omit(keys, props))
 const isFunction = x => typeof x === 'function'
 const lookup = flip(prop)
 
-const connectAction = ({ action, name, args = [], builder = null }) => {
+const withPartialActionBind = ({ action, name, args = [], builder = null }) => {
   return compose(
     connect(
       (state, props) => ({
@@ -33,4 +33,4 @@ const connectAction = ({ action, name, args = [], builder = null }) => {
   )
 }
 
-export default connectAction
+export default withPartialActionBind
