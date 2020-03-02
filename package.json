@@ -1,6 +1,6 @@
 {
   "name": "@surglogs/with-partial-action-bind",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "withPartialActionBind HOC for connecting a partially applying Redux actions",
   "main": "lib/index.js",
   "types": "index.d.ts",
@@ -37,14 +37,14 @@
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.0",
     "recompose": "^0.30.0",
-    "redux": "^4.0.4"
+    "redux": "^4.0.4",
+    "ramda": "^0.27.0"
   },
   "peerDependencies": {
     "recompose": "^0.30.0",
     "react": "^16.8.6",
-    "react-redux": "^7.0.0"
+    "react-redux": "^7.0.0",
+    "ramda": "^0.27.0"
   },
-  "dependencies": {
-    "ramda": "^0.26.1"
-  }
+  "dependencies": {}
 }
